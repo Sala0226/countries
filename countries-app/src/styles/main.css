@@ -1,0 +1,81 @@
+/* --------------------
+   VARIABLES
+-------------------- */
+.app {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* --------------------
+   LIGHT MODE
+-------------------- */
+.app.light {
+  background-color: #fafafa;
+  color: #111517;
+}
+
+.app.light .navbar {
+  background-color: #ffffff;
+}
+
+.app.light .card,
+.app.light .form-control,
+.app.light .form-select {
+  background-color: #ffffff;
+  color: #111517;
+}
+
+/* --------------------
+   DARK MODE
+-------------------- */
+.app.dark {
+  background-color: #202c37;
+  color: #ffffff;
+}
+
+.app.dark .navbar {
+  background-color: #2b3945;
+}
+
+.app.dark .card,
+.app.dark .form-control,
+.app.dark .form-select {
+  background-color: #2b3945;
+  color: #ffffff;
+}
+
+.app.dark .form-control::placeholder {
+  color: #cccccc;
+}
+
+/* --------------------
+   COMMON
+-------------------- */
+.card {
+  border: none;
+  border-radius: 6px;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.form-control,
+.form-select {
+  border: none;
+  height: 50px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+}
+
+.border-country-btn {
+  padding: 5px 20px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
